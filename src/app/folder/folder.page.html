@@ -14,8 +14,67 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Welcome, Dwita</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-segment value="all">
+        <ion-segment-button value="all">
+          <ion-label>All</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="friends">
+          <ion-label>Friends</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid">
+        Help
+        <ion-icon slot="end" name="help-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <div id="card">
+      <ion-card color="secondary">
+        <img alt="Silhouette of mountains" src="assets/dwita unsoed.jpg" />
+        <ion-card-header>
+          <ion-card-title>Dwita Isma Aprilia</ion-card-title>
+          <ion-card-subtitle>NIM H1D022034</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content> Praktikum Pemrograman Mobile </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      Seacrh
+    </ion-tab-button>
+    <ion-tab-button tab="heart">
+      <ion-icon name="heart"></ion-icon>
+      Favorite
+    </ion-tab-button>
+    <ion-tab-button tab="person">
+      <ion-icon name="person"></ion-icon>
+      Profile
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
